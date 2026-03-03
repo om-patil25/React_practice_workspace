@@ -62,7 +62,28 @@ This workspace serves as a hands-on learning environment to strengthen core Reac
 
 ---
 
+## 🔐 Notes
+
+- Entry IDs use Date.now() to ensure compatibility during LAN/mobile development.
+- Designed as a frontend-focused learning project.
+- No backend integration (yet).
+
+---
+
+## 📌 Purpose
+
+This project was built to:
+
+- Strengthen understanding of React fundamentals
+- Practice structured component architecture
+- Improve debugging skills across environments
+- Build responsive UI without over-relying on libraries
+
+---
+
 ## 📂 Project Structure
+
+```
 
 src/
 ├── components/
@@ -82,6 +103,8 @@ src/
 │ ├── storageServices.js
 │ └── currentDateNTime.js
 
+```
+
 ---
 
 ## ⚙ Installation & Setup
@@ -91,4 +114,16 @@ Clone the repository:
 ```bash
 git clone https://github.com/om-patil25/React_practice_workspace.git
 cd React_practice_workspace
+```
+
+## Install dependencies:
+
+```bash
+npm install
+```
+
+## Run development server:
+
+```bash
+npm run dev
 ```

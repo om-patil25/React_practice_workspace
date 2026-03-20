@@ -20,7 +20,7 @@ const JournalForm = ({
       onSubmit={(e) => onAdd(e)}
       className="w-5/6 md:w-8/12 p-2 md:h-11/12 bg-accent-light dark:bg-card-dark rounded-lg flex flex-col justify-center items-center gap-3 md:gap-2"
     >
-      <div className="w-full h-max flex justify-between items-center ">
+      <div className="w-full h-max flex justify-between items-center">
         {/* {currentDate.toLocaleTimeString()} */}
         <div className="h-10 bg-white dark:bg-accent-dark flex flex-1 mr-3 justify-center items-center rounded-lg p-2">
           {time}
@@ -45,7 +45,7 @@ const JournalForm = ({
             }
             onClickFunc={() => setIsInEdit(true)}
             btnStyle={
-              "px-5 py-3 md:py-1 md:px-3 text-white bg-accentdeep-light dark:bg-accentdeep-dark text-lg"
+              "px-5 py-3 md:py-1 md:px-3 text-gray-50 bg-accentdeep-light dark:bg-accentdeep-dark text-lg hover:bg-accent-light-hover dark:hover:bg-accent-dark cursor-pointer"
             }
           />
         )}
@@ -58,7 +58,7 @@ const JournalForm = ({
             }
             onClickFunc={onSaveAftEdit}
             btnStyle={
-              "px-5 py-3 md:py-1 md:px-3 text-white bg-accentdeep-light dark:bg-accentdeep-dark text-lg"
+              "px-5 py-3 md:py-1 md:px-3 text-gray-50 bg-accentdeep-light dark:bg-accentdeep-dark text-lg hover:bg-accent-light-hover dark:hover:bg-accent-dark cursor-pointer"
             }
           />
         )}
@@ -74,7 +74,7 @@ const JournalForm = ({
               setCurrentId(null);
             }}
             btnStyle={
-              "px-5 py-3 md:py-1 md:px-3 text-white bg-accentdeep-light dark:bg-accentdeep-dark text-lg"
+              "px-5 py-3 md:py-1 md:px-3 text-gray-50 bg-accentdeep-light dark:bg-accentdeep-dark text-lg hover:bg-accent-light-hover dark:hover:bg-accent-dark cursor-pointer"
             }
           />
         ) : (
@@ -86,7 +86,7 @@ const JournalForm = ({
             }
             type={"submit"}
             btnStyle={
-              "px-5 py-3 md:py-1 md:px-3 text-white bg-accentdeep-light dark:bg-accentdeep-dark text-lg"
+              "px-5 py-3 md:py-1 md:px-3 text-gray-50 bg-accentdeep-light dark:bg-accentdeep-dark text-lg hover:bg-accent-light-hover dark:hover:bg-accent-dark cursor-pointer"
             }
           />
         )}

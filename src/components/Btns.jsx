@@ -7,7 +7,7 @@ const Btns = ({ btnName, btnStyle, onClickFunc = () => {}, type }) => {
         if (type != "submit") e.stopPropagation();
         onClickFunc() || "";
       }}
-      className={`${btnStyle} rounded-sm`}
+      className={`${btnStyle} rounded-lg`}
     >
       {btnName}
     </button>

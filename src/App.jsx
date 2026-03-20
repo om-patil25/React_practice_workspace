@@ -25,28 +25,28 @@ const App = () => {
 
   return (
     <>
-      <div className="w-full flex justify-center h-max fixed bottom-5 md:top-3 z-10">
+      <div className="w-full flex flex-row items-center justify-center h-20 md:h-14 bg-card-light/50 dark:bg-bg-dark/70 fixed bottom-0 md:top-0 z-10">
         <nav className="relative w-4/5 md:w-2/5 h-14 md:h-9 bg-accent-light dark:bg-card-dark rounded-4xl flex justify-evenly items-center">
           <div
             className={`absolute h-full top-0 left-0 bg-accentdeep-light dark:bg-accent-dark w-1/4 rounded-full transition-all duration-300 ${getCurrentLocation()}`}
           />
           <Link
             to="/"
-            className="flex justify-center flex-1 z-10 text-gray-900 dark:text-white items-center gap-2"
+            className="h-full flex justify-center flex-1 z-10 rounded-full text-gray-900 hover:text-shadow-2xs dark:text-white items-center gap-2"
           >
             <House />
             <span className="hidden md:block"> Home</span>
           </Link>
           <Link
             to="/DailyJournal"
-            className="flex justify-center flex-1 z-10 text-gray-900 dark:text-white items-center gap-2"
+            className="h-full flex justify-center flex-1 z-10 rounded-full text-gray-900 hover:text-shadow-2xs dark:text-white items-center gap-2"
           >
             <NotebookPen />
             <span className="hidden md:block"> Daily Journal</span>
           </Link>
           <Link
             to="/Users"
-            className="flex justify-center flex-1 z-10 text-gray-900 dark:text-white items-center gap-2"
+            className="h-full flex justify-center flex-1 z-10 rounded-full text-gray-900 hover:text-shadow-2xs dark:text-white items-center gap-2"
           >
             <Users />
             <span className="hidden md:block"> Users</span>

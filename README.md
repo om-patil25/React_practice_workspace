@@ -6,6 +6,29 @@ This workspace serves as a hands-on learning environment to strengthen core Reac
 
 ---
 
+### Home
+
+<p align="center">
+  <img src="screenshots/Home.png" width="520" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/mobile.jpeg" width="240" />
+</p>
+
+### Home(Dark mode)
+
+![Home(Dark mode)](screenshots/Home-dark.png)
+
+### Daily Journal
+
+![Daily Journal](screenshots/Journal.png)
+
+### Users(Api handling)
+
+![Users(Api Handling)](screenshots/Users.png)
+
+---
+
+
 ## 🚀 Features
 
 ### 🗒 Daily Journal
@@ -74,35 +97,60 @@ This workspace serves as a hands-on learning environment to strengthen core Reac
 
 This project was built to:
 
-- Strengthen understanding of React fundamentals
-- Practice structured component architecture
-- Improve debugging skills across environments
-- Build responsive UI without over-relying on libraries
-
+- Learn and implement CRUD operations in a real-world scenario  
+- Practice API data fetching and handling (loading & error states)  
+- Strengthen understanding of core React concepts (useState, useEffect, Context API)  
+- Build a structured and reusable component architecture  
+- Improve debugging skills across different environments (desktop vs mobile)  
+- Develop a clean, responsive, and minimal UI  
 ---
 
 ## 📂 Project Structure
 
 ```
 
-src/
-├── components/
-│ ├── JournalCard.jsx
-│ ├── JournalForm.jsx
-│ ├── Btns.jsx
+react-practice-workspace/
+├── src/
+│   ├── assets/
 │
-├── pages/
-│ ├── Home.jsx
-│ ├── DailyJournal.jsx
-│ ├── UsersDB.jsx
+│   ├── components/
+│   │   ├── Btns.jsx
+│   │   ├── HomeCard.jsx
+│   │   ├── JournalCard.jsx
+│   │   ├── JournalForm.jsx
+│   │   ├── LoadingState.jsx
+│   │   ├── MetaData.jsx
+│   │   ├── UserCard.jsx
+│   │   ├── UserForm.jsx
+│   │   ├── UserModal.jsx
+│   │   └── UsersDBinp.jsx
 │
-├── context/
-│ └── ThemeContext.jsx
+│   ├── context/
+│   │   └── ThemeContext.jsx
 │
-├── services/
-│ ├── storageServices.js
-│ └── currentDateNTime.js
-
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── DailyJournal.jsx
+│   │   └── UsersDB.jsx
+│
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── currentDateNTime.js
+│   │   ├── storageServices.js
+│   │   └── userServices.js
+│
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
 ```
 
 ---

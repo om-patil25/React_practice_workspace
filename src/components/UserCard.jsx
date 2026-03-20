@@ -10,7 +10,7 @@ const UserCard = ({ user, onDelete, onEdit, onView }) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2 }}
       onClick={() => onView(user)}
-      className="flex items-center w-11/12 md:w-72 bg-accent-light dark:bg-card-dark rounded-xl p-1"
+      className="flex items-center w-11/12 md:w-72 bg-accent-light dark:bg-card-dark dark:hover:shadow-accent-dark hover:shadow-lg rounded-xl p-1 cursor-pointer"
     >
       <div className="w-28 shrink-0 p-1">
         <img
@@ -35,7 +35,7 @@ const UserCard = ({ user, onDelete, onEdit, onView }) => {
               </span>
             }
             btnStyle={
-              "p-2 text-sm bg-accentdeep-light hover:bg-accent-light-hover dark:bg-accent-dark dark:hover:bg-accent-dark-hover"
+              "p-2 text-sm bg-accentdeep-light hover:bg-accent-light-hover dark:bg-accent-dark dark:hover:bg-accent-dark-hover cursor-pointer"
             }
             onClickFunc={() => onEdit(user)}
           />
@@ -47,7 +47,7 @@ const UserCard = ({ user, onDelete, onEdit, onView }) => {
               </span>
             }
             btnStyle={
-              "p-2 text-sm bg-accentdeep-light hover:bg-accent-light-hover dark:bg-accent-dark dark:hover:bg-accent-dark-hover"
+              "p-2 text-sm bg-accentdeep-light hover:bg-accent-light-hover dark:bg-accent-dark dark:hover:bg-accent-dark-hover cursor-pointer"
             }
             onClickFunc={() => onDelete(user.id)}
           />

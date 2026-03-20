@@ -13,7 +13,7 @@ const UserModal = ({ user, onClose, isOpen, onEdit, onDelete }) => {
       <div className="min-w-5/6 max-w-11/12 min-h-3/6 bg-accent-light dark:bg-card-dark rounded-xl p-3">
         <div className="flex p-1 relative">
           <div className="absolute top-2 right-2">
-            <Btns btnName={<X size={30} />} onClickFunc={onClose} />
+            <Btns btnName={<X size={30} />} onClickFunc={onClose} btnStyle={"cursor-pointer"}/>
           </div>
           <div className="w-44 shrink-0 rounded-xl">
             <img
@@ -44,7 +44,7 @@ const UserModal = ({ user, onClose, isOpen, onEdit, onDelete }) => {
                 onEdit(user);
               }}
               btnStyle={
-                "h-max p-2 bg-accentdeep-light hover:bg-accent-light-hover dark:bg-accent-dark dark:hover:bg-accent-dark-hover text-white dark:text-gray-50 rounded-lg"
+                "h-max p-2 bg-accentdeep-light hover:bg-accent-light-hover dark:bg-accent-dark dark:hover:bg-accent-dark-hover text-white dark:text-gray-50 rounded-lg cursor-pointer"
               }
             />
 
@@ -58,7 +58,7 @@ const UserModal = ({ user, onClose, isOpen, onEdit, onDelete }) => {
                 onDelete(user.id);
               }}
               btnStyle={
-                "h-max p-2 bg-accentdeep-light hover:bg-accent-light-hover dark:bg-accent-dark dark:hover:bg-accent-dark-hover text-white dark:text-gray-50 rounded-lg"
+                "h-max p-2 bg-accentdeep-light hover:bg-accent-light-hover dark:bg-accent-dark dark:hover:bg-accent-dark-hover text-white dark:text-gray-50 rounded-lg cursor-pointer"
               }
             />
           </div>

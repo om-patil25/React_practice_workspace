@@ -83,7 +83,7 @@ const UserForm = ({
           }
           type={"submit"}
           btnStyle={
-            "w-full md:w-max md:py-1 md:px-2  py-2 text-white bg-accentdeep-light dark:bg-accent-dark text-lg rounded-xl flex justify-center items-center mt-4"
+            "w-full md:w-max md:py-1 md:px-2  py-2 text-white bg-accentdeep-light dark:bg-accent-dark hover:bg-accent-light-hover dark:hover:bg-accent-dark-hover text-lg rounded-xl flex justify-center items-center mt-4 cursor-pointer"
           }
         />
       </div>
